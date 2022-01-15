@@ -23,8 +23,7 @@ namespace NeonebuMain
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             form1 = new Form1();
-            Beginning beginning = new Beginning();
-            beginning.RegisterInStartup();
+            Beginning.RegisterInStartup();
             Application.Run(form1);
         }
     }

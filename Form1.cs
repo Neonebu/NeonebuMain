@@ -17,5 +17,9 @@ namespace NeonebuMain
             InitializeComponent();
         }
 
+        private void btnBgImage_Click(object sender, EventArgs e)
+        {
+            Beginning.SetWallpaper("C:\\Users\\Oguzcan\\Pictures\\pp.png");
+        }
     }
 }
