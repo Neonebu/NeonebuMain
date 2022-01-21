@@ -31,12 +31,15 @@ namespace NeonebuMain
         {
             this.panelMain = new System.Windows.Forms.Panel();
             this.btnBgImage = new NeonebuMain.Button_WOC();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.Color.White;
+            this.panelMain.Controls.Add(this.pictureBox1);
             this.panelMain.Controls.Add(this.btnBgImage);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(0, 0);
@@ -65,6 +68,14 @@ namespace NeonebuMain
             this.btnBgImage.UseVisualStyleBackColor = false;
             this.btnBgImage.Click += new System.EventHandler(this.btnBgImage_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(265, 67);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(346, 197);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -75,6 +86,7 @@ namespace NeonebuMain
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NeonebuMain";
             this.panelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,6 +95,7 @@ namespace NeonebuMain
 
         private System.Windows.Forms.Panel panelMain;
         private NeonebuMain.Button_WOC btnBgImage;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

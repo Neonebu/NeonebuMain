@@ -12,6 +12,8 @@ namespace NeonebuMain
 {
     public partial class Form1 : Form
     {
+        private DesktopManagement mgnt = new DesktopManagement();
+
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +21,9 @@ namespace NeonebuMain
 
         private void btnBgImage_Click(object sender, EventArgs e)
         {
-            Beginning.SetWallpaper("C:\\Users\\Oguzcan\\Pictures\\pp.png");
+            //Beginning.SetWallpaper("C:\\Users\\Oguzcan\\Pictures\\pp.png");
+            pictureBox1.Image = Image.FromFile(mgnt.GetCurrentDesktopWallpaper());
+
         }
     }
 }
